@@ -1,6 +1,6 @@
 {
   "presets": [
-    "@babel/preset-env",
+    ["@babel/preset-env"],
     [
       "@babel/preset-react",
       {
@@ -11,14 +11,11 @@
   ],
   "plugins": [
     "@emotion",
-    "@babel/plugin-proposal-nullish-coalescing-operator",
-    "@babel/plugin-proposal-optional-chaining",
     "@babel/plugin-transform-react-display-name",
     [
       "@babel/plugin-transform-runtime",
       {
         "absoluteRuntime": false,
-        "corejs": false,
         "helpers": true,
         "regenerator": true,
         "useESModules": false,

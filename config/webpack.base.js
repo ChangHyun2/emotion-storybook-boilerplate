@@ -8,15 +8,12 @@ const aliases = {
   '@': '',
   '@UI': 'component/UI',
   '@component': 'component',
-  '@context': 'context',
-  '@hooks': 'hooks/index.js',
-  '@utils': 'utils/index.js',
-  '@api': 'api',
   '@page': 'page',
-  '@variable': 'variable/index.js',
-  S: 'lib/S/index.js',
-  Former: 'lib/Former/index.js',
+  '@hooks': 'hooks/index.js',
+  '@context': 'context/index.js',
+  '@util': 'util/index.js',
 };
+
 Object.keys(aliases).forEach((importName) => {
   const pathName = aliases[importName];
 
