@@ -4,7 +4,6 @@ const baseConfig = require('./webpack.base.js');
 const paths = require('./paths.js');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CaseSensitivePathsWebpackPlugin = require('case-sensitive-paths-webpack-plugin');
-const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const IMAGE_INLINE_SIZE_LIMIT = '10000';
 
 // redirect cannot get issue
@@ -99,7 +98,6 @@ const devConfig = {
     }),
     new CaseSensitivePathsWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
-    new BundleAnalyzerPlugin(),
   ],
   devServer: {
     port: 5000,

@@ -93,3 +93,11 @@ https://webpack.js.org/concepts/manifest/
 - babel runtime
 트랜스파일링 과정에서 재사용되는 
 https://babeljs.io/docs/en/babel-runtime 
+
+
+### issues
+
+**after commit : 웹팩 환경 설정 , 리엑트**
+storybook webpack 5 미지원
+- https://github.com/storybookjs/storybook/issues/13332
+- `npm i --save-dev html-webpack-plugin@next`
